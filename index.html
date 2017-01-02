@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Firebase 3 clase en abierto</title>
+  <link rel="stylesheet" href="estilo.css">
+
+</head>
+<body>
+  <div class="contenido">
+    <header>
+      <img src="images/logo-firebase.png" alt="Firebase 3" width="190" height="62">
+      <img src="images/user-icon.png" alt="Login" width="50" height="50" id="usericon">      
+      <img src="images/salir.png" alt="Logout" width="50" height="50" id="logouticon">      
+    </header>
+    <div class="caja">
+      <p class="titular">
+        <span id="preg"></span>
+        <img src="images/up.png" alt="Colapsar encuesta" width="24" height="24" id="up">
+        <img src="images/down.png" alt="Mostrar encuesta" width="24" height="24" id="down">
+      </p>
+      <section class="encuesta" id="cuerpoencuesta">
+        <p class="descrip" id="desc"></p>
+        <ul id="lista">
+        </ul>
+        <div id="votar">Votar</div>
+      </section>
+    </div>
+
+    <div id="resultados">
+      <div class="titular">
+        Están diciendo...
+      </div>
+      <div id="sinrespuestas">Sin respuestas recibidas...</div>
+    </div>
+  </div>
+  
+  <div id="mensaje"></div>
+
+
+  <script src="https://www.gstatic.com/firebasejs/3.6.4/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyAK6ZTPi-aPUoJhTggEtTW2csVzU9I371Y",
+      authDomain: "nuevo-firebase.firebaseapp.com",
+      databaseURL: "https://nuevo-firebase.firebaseio.com",
+      storageBucket: "nuevo-firebase.appspot.com",
+      messagingSenderId: "470144154850"
+    };
+    firebase.initializeApp(config);
+  </script>
+  <script src="js/funciones.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/database.js"></script>
+</body>
+</html>

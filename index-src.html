@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Firebase 3 clase en abierto</title>
+  <link rel="stylesheet" href="estilo.css">
+
+</head>
+<body>
+  <div class="contenido">
+    <header>
+      <img src="images/logo-firebase.png" alt="Firebase 3" width="190" height="62">
+      <img src="images/user-icon.png" alt="Login" width="50" height="50" id="usericon">      
+      <img src="images/salir.png" alt="Logout" width="50" height="50" id="logouticon">      
+    </header>
+    <div class="caja">
+      <p class="titular" id="preg">¿Cómo conocíste Firebase?</p>
+      <p class="descrip" id="desc">Dinos cómo y cuándo conociste el servicio Firebase.</p>
+      <section class="encuesta">
+        <ul id="lista">
+          <li><input type="radio" name="respuesta"> Hace bastante tiempo, en Internet</li>
+          <li><input type="radio" name="respuesta"> A raíz de su compra por Google</li>        
+          <li><input type="radio" name="respuesta"> En las conferencias de desarrolladores de Google</li>
+          <li><input type="radio" name="respuesta"> En Youtube</li>
+          <li><input type="radio" name="respuesta"> En DesarrolloWeb, el año pasado</li>
+          <li><input type="radio" name="respuesta"> En Internet en general</li>
+          <li><input type="radio" name="respuesta"> Lo estoy conociendo ahora con @EscuelaIT</li>
+        </ul>
+        <div id="votar">Votar</div>
+      </section>
+    </div>
+
+    <div id="resultados">
+      <div class="titular">
+        Están diciendo...
+      </div>
+      <div id="sinrespuestas">Sin respuestas recibidas...</div>
+    </div>
+  </div>
+
+  <div id="mensaje"></div>
+</body>
+</html>

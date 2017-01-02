@@ -1,0 +1,26 @@
+{
+  "rules": {
+    "encuesta": {
+      ".read": "true"
+    },
+    "respuestas": {
+      ".read": "true"
+    },
+    "resultados": {
+      ".read": "true",
+      "$id": {
+        ".validate": "newData.hasChildren(['user', 'respuesta'])",
+        "user": {
+          ".validate": "newData.isString() && newData.val().length > 10 && newData.val().length <= 50"
+        },
+        "respuesta": {
+          ".validate": "newData.isString() && newData.val().length > 1 && newData.val().length <= 25"
+        },
+        "$other": {
+          ".validate": "false"
+        },
+        ".write": "auth != null && auth.uid == $id"
+      }
+    }
+  }
+}

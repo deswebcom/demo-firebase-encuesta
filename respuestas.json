@@ -1,0 +1,26 @@
+{
+  "res1": {
+    "respuesta": "Hace bastante tiempo, en Internet",
+    "valor": "Hace bastante"
+  },
+  "res2": {
+    "respuesta": "A raíz de su compra por Google",
+    "valor": "Compra Google"
+  },
+  "res3": {
+    "respuesta": "En las conferencias de desarrolladores de Google",
+    "valor": "Conferencias Google"
+  },
+  "res4": {
+    "respuesta": "En Youtube",
+    "valor": "Youtube"
+  },
+  "res5": {
+    "respuesta": "En DesarrolloWeb, el año pasado",
+    "valor": "DesarrolloWeb 2016"
+  },
+  "res6": {
+    "respuesta": "Internet en general",
+    "valor": "Internet"
+  }
+}
