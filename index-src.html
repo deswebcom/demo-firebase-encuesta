@@ -14,9 +14,13 @@
       <img src="images/salir.png" alt="Logout" width="50" height="50" id="logouticon">      
     </header>
     <div class="caja">
-      <p class="titular" id="preg">¿Cómo conocíste Firebase?</p>
-      <p class="descrip" id="desc">Dinos cómo y cuándo conociste el servicio Firebase.</p>
-      <section class="encuesta">
+      <p class="titular">
+        <span id="preg">¿Cómo conocíste Firebase?</span>
+        <img src="images/up.png" alt="Colapsar encuesta" width="24" height="24" id="up">
+        <img src="images/down.png" alt="Mostrar encuesta" width="24" height="24" id="down">
+      </p>
+      <section class="encuesta" id="cuerpoencuesta">
+        <p class="descrip" id="desc">Dinos cómo y cuándo conociste el servicio Firebase.</p>
         <ul id="lista">
           <li><input type="radio" name="respuesta"> Hace bastante tiempo, en Internet</li>
           <li><input type="radio" name="respuesta"> A raíz de su compra por Google</li>        
@@ -39,5 +43,8 @@
   </div>
 
   <div id="mensaje"></div>
+
+
+  <script src="js/funciones.js"></script>
 </body>
 </html>
