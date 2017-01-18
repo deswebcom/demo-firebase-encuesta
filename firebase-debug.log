@@ -11,3 +11,16 @@
 [info] Project Directory: /Users/midesweb/html/cursos/firebase3/clase en abierto
 [info] 
 [info] Server listening at: http://localhost:5000
+[debug] ----------------------------------------------------------------------
+[debug] Command:      /usr/local/bin/node /usr/local/bin/firebase serve
+[debug] CLI Version:  3.2.1
+[debug] Platform:     darwin
+[debug] Node Version: v6.2.2
+[debug] Time:         Tue Jan 17 2017 10:18:58 GMT-0200 (BRST)
+[debug] ----------------------------------------------------------------------
+[debug] 
+[info] Starting Firebase development server...
+[info] 
+[info] Project Directory: /Users/midesweb/html/cursos/firebase3/clase en abierto
+[info] 
+[info] Server listening at: http://localhost:5000

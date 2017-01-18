@@ -16,19 +16,19 @@ getId('usericon').addEventListener('click', function() {
 });
 
 
-firebase.auth().onAuthStateChanged(function(user) {
+auth.onAuthStateChanged(function(user) {
   if (user) {
     getId('usericon').style.display = 'none';
-    getId('logouticon').style.display = 'block';    
+    getId('logouticon').style.display = 'block';
   } else {
     getId('usericon').style.display = 'block';
-    getId('logouticon').style.display = 'none';  
+    getId('logouticon').style.display = 'none';
   }
 });
 
 getId('logouticon').addEventListener('click', function() {
   auth.signOut()
     .then(function() {
-      mensajeFeedback('Sesión cerrada');      
+      mensajeFeedback('Sesión cerrada');
     });
 });
